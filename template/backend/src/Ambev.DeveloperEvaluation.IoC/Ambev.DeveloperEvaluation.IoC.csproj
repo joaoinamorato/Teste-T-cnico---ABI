@@ -11,12 +11,16 @@
 	</ItemGroup>
 	
 	<ItemGroup>
+	  <PackageReference Include="Grpc.Net.ClientFactory" Version="2.71.0" />
 	  <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.8" />
+	  <PackageReference Include="Rebus.ServiceProvider" Version="10.3.0" />
 	</ItemGroup>
 	
 	<ItemGroup>
 		<ProjectReference Include="..\Ambev.DeveloperEvaluation.Domain\Ambev.DeveloperEvaluation.Domain.csproj" />
 		<ProjectReference Include="..\Ambev.DeveloperEvaluation.Application\Ambev.DeveloperEvaluation.Application.csproj" />
+		<ProjectReference Include="..\Ambev.DeveloperEvaluation.GrpcClients\Ambev.DeveloperEvaluation.GrpcClients.csproj" />
+		<ProjectReference Include="..\Ambev.DeveloperEvaluation.MessageBroker\Ambev.DeveloperEvaluation.MessageBroker.csproj" />
 		<ProjectReference Include="..\Ambev.DeveloperEvaluation.ORM\Ambev.DeveloperEvaluation.ORM.csproj" />
 		<ProjectReference Include="..\Ambev.DeveloperEvaluation.Common\Ambev.DeveloperEvaluation.Common.csproj" />
 	</ItemGroup>

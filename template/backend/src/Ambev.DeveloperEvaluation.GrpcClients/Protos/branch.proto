@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "Ambev.DeveloperEvaluation.Grpc.Protos";
+package branch;
+
+service BranchGrpc {
+  rpc GetBranch (GetBranchRequest) returns (GetBranchResponse);
+}
+
+message GetBranchRequest {
+  string id = 1;
+}
+
+message GetBranchResponse {
+  string id = 1;
+  string name = 2;
+}
